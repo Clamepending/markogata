@@ -13,7 +13,7 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
   author = "Mark Ogata"
-  info = "悔いのない一日を！"
+  info = "what would the martians think?"
   description = "Mark Ogata's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "img/face.jpg"
@@ -64,13 +64,31 @@ disqusShortname = "yourdiscussshortname"
   weight = 5
   url = "https://www.linkedin.com/in/sota-mark-ogata-153b06212/"
 
+
+[languages.en]
+languageName = "English"
+
 # Menu links
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Posts"
   weight = 1
   url  = "posts/"
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "About"
+  weight = 2
+  url = "about/"
+
+[languages.jp]
+  languageName = "日本語"
+  title = "緒方奏太"
+  author = "緒方奏太マーク"
+  info = "悔いのない一日を！"
+[[languages.jp.menu.main]]
+  name = "投稿"
+  weight = 1
+  url  = "posts/"
+[[languages.jp.menu.main]]
+  name = "誰？"
   weight = 2
   url = "about/"
 
