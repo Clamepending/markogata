@@ -1,0 +1,76 @@
+baseURL = "https://lustrous-bublanina-9610c8.netlify.app"
+languageCode = "en"
+title = "Mark Ogata"
+theme = "hugo-coder"
+
+paginate = 20
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+  author = "Mark Ogata"
+  info = "悔いのない一日を！"
+  description = "Mark Ogata's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "img/face.jpg"
+
+  favicon_32 = "favicon/lolface.png"
+  # favicon_16 = "/img/favicon-16x16.png"
+
+  touchIcon = "/images/apple-touch-icon.png"
+  since = 2022
+
+  math = false
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+#   customCSS = ["css/custom.css"]
+#   customSCSS = ["scss/custom.scss"]
+#   customJS = ["js/custom.js"]
+  commentoURL = "https://cdn.commento.io"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/Clamepending/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/SotaOgata/"
+[[params.social]]
+  name = "Instagram"
+  icon = "fa fa-instagram fa-2x"
+  weight = 4
+  url = "https://www.instagram.com/sotaogata/"
+[[params.social]]
+  name = "Linkedin"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 5
+  url = "https://www.linkedin.com/in/sota-mark-ogata-153b06212/"
+
+# Menu links
+[[menu.main]]
+  name = "Posts"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+

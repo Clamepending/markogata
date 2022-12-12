@@ -9,6 +9,7 @@ tags = []
 categories = []
 externalLink = ""
 series = []
+featuredImage = "img/face.jpg"
 +++
 
 
