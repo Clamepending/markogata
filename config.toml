@@ -81,8 +81,14 @@ languageName = "English"
 [languages.jp]
   languageName = "日本語"
   title = "緒方奏太"
+  
+
+[languages.jp.params]
   author = "緒方奏太マーク"
   info = "悔いのない一日を！"
+  description = "個人のブログ"
+  keywords = "個人,ブログ,ロボット"
+
 [[languages.jp.menu.main]]
   name = "投稿"
   weight = 1

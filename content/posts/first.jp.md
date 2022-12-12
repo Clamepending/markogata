@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2022-12-12T10:35:18-08:00
-title = "Why post?"
+title = "何でブログ?"
 description = ""
 slug = ""
 authors = []

@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2022-12-12T10:35:18-08:00
-title = "Who am I?"
+title = "僕について"
 description = "About me"
 slug = ""
 authors = []
