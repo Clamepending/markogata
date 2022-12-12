@@ -1,3 +1,28 @@
-baseURL: http://example.org/
+baseURL: 
 languageCode: en-us
-title: My New Hugo Site
+title: Mark Ogata
+theme: hugo-coder
+
+
+# params:
+#   ShowReadingTime: true
+#   ShowShare Buttons: true
+
+
+
+
+
+menu:
+  main:
+    - identifier: Posts
+      name: Posts
+      url: /posts/
+      weight: 10  
+    - identifier: Categories
+      name: Categories
+      url: /Categories/
+      weight: 20  
+    - identifier: Projects
+      name: Projects
+      url: /Projects/
+      weight: 30

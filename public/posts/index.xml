@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mark Ogata</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Mark Ogata</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Dec 2022 10:35:18 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>first</title>
+      <link>/posts/first/</link>
+      <pubDate>Mon, 12 Dec 2022 10:35:18 -0800</pubDate>
+      
+      <guid>/posts/first/</guid>
+      <description>headingLink to headinganother oneLink to headingnaniLink to headingparagraph
+whattttt</description>
+    </item>
+    
+  </channel>
+</rss>
