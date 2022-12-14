@@ -13,12 +13,12 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
   author = "Mark Ogata"
-  info = "what would the martians think?"
+  info = "Anticipation"
   description = "Mark Ogata's personal website"
   keywords = "blog,developer,personal"
-  avatarurl = "img/face.jpg"
+  avatarurl = "img/logo.png"
 
-  favicon_32 = "favicon/lolface.png"
+  favicon_32 = "img/logo.png"
   # favicon_16 = "/img/favicon-16x16.png"
 
   touchIcon = "/images/apple-touch-icon.png"
