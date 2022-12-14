@@ -5,11 +5,11 @@ title = "Why post?"
 description = ""
 slug = ""
 authors = []
-tags = []
+tags = ["essay"]
 categories = []
 externalLink = ""
 series = []
-featuredImage = "img/face.jpg"
+featuredImage = "img/tomix.jpg"
 +++
 
 

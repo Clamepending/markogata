@@ -11,7 +11,7 @@ externalLink = ""
 series = []
 featuredImage = "img/face.jpg"
 +++
-
+![my face](/img/face.jpg)
 - I am a freshman at UC Berkeley.
 - Majoring in Physics, Applied Mathematics, and Computer Science
 - I am part of Space Enterprise at Berkeley (liquid rocketry) and was part of Princeton SpeedBoating (electric boats)
