@@ -27,7 +27,7 @@ Now imagine yourself as a citizen of a self-sustaining city on mars. Would you r
 
 To be clear, I am not saying we should ignore geopolitics. However, I am saying that we have control over what we spend our time on, and for those in a democracy, indirect control of what the government spends our money on. So it is important to get our priorities right and invest in things that really matter. If we are wasting time and money on things that don't matter, we should redirect time and money to things that do.
 
-This post was heavily influenced by a youtube clip I saw of Dr Robert Zubrin explaining why we should go to mars: https://www.youtube.com/watch?v=plTRdGF-ycs
+This post was heavily influenced by a youtube clip I saw of Dr Robert Zubrin explaining [why we should go to mars](https://www.youtube.com/watch?v=plTRdGF-ycs)
 
 
 
