@@ -11,7 +11,7 @@ externalLink = ""
 series = []
 featuredImage = "img/face.jpg"
 +++
-
+![my face](/img/face.jpg)
 - 私は UC Berkeley の1年生です。
 - 物理学、応用数学、コンピューターサイエンスを専攻
 - 私はバークレーの Space Enterprise (液体ロケット) の一員であり、Princeton SpeedBoating (電気ボート) の一員でした。
