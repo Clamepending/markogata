@@ -13,7 +13,7 @@ featuredImage = "img/face.jpg"
 +++
 ![my face](/img/face.jpg)
 - 私は UC Berkeley の1年生です。
-- 物理学、応用数学、コンピューターサイエンスを専攻
+- 数学とコンピューターサイエンスを専攻
 - 私はバークレーの Space Enterprise (液体ロケット) の一員であり、Princeton SpeedBoating (電気ボート) の一員でした。
 - 日本、ドイツ、アメリカの 8 か所以上に住んだ経験があります
 - サッカー ロボットを作成し、高校時代にロボカップ ジュニア ワールドワイドに出場しました

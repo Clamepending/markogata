@@ -13,7 +13,7 @@ featuredImage = "img/face.jpg"
 +++
 ![my face](/img/face.jpg)
 - I am a freshman at UC Berkeley.
-- Majoring in Physics, Mathematics, and Computer Science
+- Majoring in Mathematics and Computer Science
 - I am part of Space Enterprise at Berkeley (liquid rocketry) and was part of Princeton SpeedBoating (electric boats)
 - I have lived in more than 8 locations across Japan, Germany, and the US
 - I built autonomous soccer robots and competed in RoboCup Junior WorldWide in high school
