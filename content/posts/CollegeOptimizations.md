@@ -51,9 +51,9 @@ I started to think the next day starts when I fall asleep, not when I wake up. T
 If you are determined to sleep late, at least sleep and get up at the same time everyday. This allows your body to develop a rhythm and go to sleep faster.
 
 
-## Yeet your phone out the window (or out of sight)
+## Put your phone away
 
-I found putting my phone away was the difference between getting 5 minutes of studying done and getting 4 hours of studying done in a session. If you haven't tried it, I highly suggest you put your phone in another room or at least out of sight. 
+I found putting my phone away was the difference between getting 5 minutes of studying done and getting 4 hours of studying done in a session. If you haven't tried it, I highly suggest you put your phone in another room or even behind your computer. 
 
 
 
