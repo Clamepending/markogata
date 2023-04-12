@@ -38,6 +38,14 @@ Here is a good video explaining RRT*:
 - treepath.py is the main data structure representing the treelike path of rrt.
 - Obstacle.py has the Obstacle class that uses the Point data structure to represent obstacles.
 
+## Classes
+
+- point.py
+- Obstacle.py
+- Tests.py
+- treepath.py
+- RRT.py
+
 # Deep dive into each Class
 
 ## point.py
