@@ -71,7 +71,7 @@ self.y # y coordinate of point
 
 ## Obstacle.py
 
-Represent an obstacle in 2 dimentions. We want to feed in a list of Point objects and create an obstacle. This obstacle shoudl be able to draw itself and handle collisions with paths.
+Represent an obstacle in 2 dimentions. We want to feed in a list of Point objects and create an obstacle. This obstacle should be able to draw itself and handle collisions with paths.
 
 ### dependencies
 
