@@ -111,16 +111,3 @@ Some papers we are reading right now include:
 
 
 
-
-
-
-
-
-
-3 parts:
-
-perception
-SLAM
-planning and control
-- Path finding
-- MPC
