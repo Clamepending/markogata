@@ -21,6 +21,17 @@ series = []
 
 # Overview
 
+Our implimentation is heavily based on [this paper](https://drive.google.com/file/d/1isQxfyFiHrueqK4rpEJMvF1BJfzxMYbw/view)
+
+We still have optimizations for RRT*, like 
+- limiting the space we randomly sample points from to in front of the car
+- punishing steep angle changes
+
+Here is a good video explaining RRT*:
+
+{{< youtube id="Ob3BIJkQJEw" >}}
+
+
 - The main program is RRT.py
 - RRT.py has an infinite loop which instantiaites and calls other classes.
 - RRT.py uses pygame, TreePath, and Obstacle datastructures to do and display the RRT algorithm.
