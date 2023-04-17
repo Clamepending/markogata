@@ -81,6 +81,8 @@ self.y # y coordinate of point
 
 Represent an obstacle in 2 dimentions. We want to feed in a list of Point objects and create an obstacle. This obstacle should be able to draw itself and handle collisions with paths.
 
+This code defines an obstacle class used in a RRT simulation that checks if a line segment from node N to node K intersects with the obstacle edges. The class has a constructor that initializes the obstacle with a list of points and a method that draws the obstacle using the pygame library. The method for checking if a line segment intersects with the obstacle edges uses the shapely library to create line segment data structures and checks if they intersect with any of the obstacle edges. If an intersection is found, the method returns True. If no intersection is found, the method returns False.
+
 ### dependencies
 
 ```python
@@ -136,6 +138,8 @@ Draw itself
 
 Main datastructure. It is a node with position attributes, a parent attribute, and a list of children.
 A root node is initialized and the successive nodes are added as children to the tree.
+
+This code defines a class TreePath that is used for constructing a tree and finding the shortest path between nodes in the tree. Each instance of the class represents a node in the tree, which is specified by its x and y coordinates, and its parent node. The class includes methods for adding child nodes to a given parent node, finding the nearest node to a given node, and checking if there are obstacles between a given node and the root node of the tree. There is also a method for finding all nodes within a given distance of a specified node. Additionally, there are methods for steering the distance of a given node, calculating the distance between two nodes, and calculating the cost of a path from a node to the root of the tree. 
 
 ### dependencies
 
@@ -497,6 +501,28 @@ nearNodes = rrt.Near(100, x_rand)
 ## Tests.py
 
 This is where we have the unit tests for all other classes.
+
+This code defines a set of unit tests for a class called TreePath which represents a node in a tree structure. The TreePath class is imported from the treepath module, along with other classes Obstacle and Point. The unittest module is also imported.
+
+There are several tests defined in the TestTree class, which is a subclass of unittest.TestCase. The setUp() method, which is typically used to set up any state needed for the tests, is not used in this case.
+
+test_TreeInitialization(): This test checks if creating nodes creates nodes with the proper initialization conditions. Three TreePath objects are created with different coordinates and their xpos, ypos, and parent attributes are checked. This test also checks that different initializations should result in different objects, but two objects with the same coordinates should not be equal.
+
+test_TreeStructure(): This test checks if adding child by pointer correctly creates nodes and the parent nodes have children lists that include their children. Several TreePath objects are created, and a tree structure is built by adding children using the addChild_byPointer() method. The test checks the correct parent-child relationships and the correct children lists.
+
+test_RemoveChild(): This test checks if removing children works as expected. A tree structure is built, and two children are removed from a parent node using the removeChild() method. The test checks that the children are correctly removed and the tree structure is updated accordingly.
+
+test_sanity(): This is a simple test that checks if 1 > 0, which should always be true. This test is used to ensure that the testing framework is working correctly.
+
+test_getDistanceTo(): This test checks if the getDistanceTo() method returns the correct Euclidean distance between two TreePath objects. Two objects are created with different coordinates, and the distance between them is computed using the getDistanceTo() method. The result is checked against a known value.
+
+test_getDistance(): This test checks if the getDistance() method returns the correct Euclidean distance between two TreePath objects. Two objects are created with different coordinates, and the distance between them is computed using the getDistance() method. The result is checked against a known value.
+
+test_addChild_byPosition(): This test checks if the addChild_byPosition() method correctly adds a child node to a parent node using the xpos and ypos arguments. The test checks that the parent-child relationships and the list of nodes are correctly updated.
+
+test_addChild_byPointer(): This test checks if the addChild_byPointer() method correctly adds a child node to a parent node using the child node object. The test checks that the parent-child relationships and the list of nodes are correctly updated.
+
+Overall, these tests provide good coverage of the TreePath class and its methods. The tests ensure that the expected behavior is maintained even as the class is modified or updated.
 
 ### dependencies
 
