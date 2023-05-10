@@ -51,10 +51,42 @@ I started to think the next day starts when I fall asleep, not when I wake up. T
 If you are determined to sleep late, at least sleep and get up at the same time everyday. This allows your body to develop a rhythm and go to sleep faster.
 
 
-## Put your phone away
+## Sit in front
 
-I found putting my phone away was the difference between getting 5 minutes of studying done and getting 4 hours of studying done in a session. If you haven't tried it, I highly suggest you put your phone in another room or even behind your computer. 
+- Easier to see the blackboard
+- Easier to hear the teacher
+- Automatic motivation to pay attention
+- Easier to ask a question
+- Easier to be noticed and make a connection with the professor
+
+## Dont take notes, or take notes by hand
+
+The worst thing to do is to copy down the words exactly from the blackboard. If you do this, you will suddenly "wake up" and not have internalized anything for the past 30 minutes.
+
+The most important thing in lecture is to focus and internalize what the professor is saying, it is NOT to have notes afterwards.
+If summerizing what the professor is saying in your own few words (write a phrase for every paragraph your teacher talks) helps you understand the ideas, then do it.
+
+I find taking notes distracts me, and I miss explanations during lecture if I do.
+
+So I usually have nothing on the desk in front of me, and if something very important is on the board, I take a picture with my phone.
+
+The downside of not taking notes at all is having to use the textbook or lecture slides when I am stuck on a homework problem.
 
 
+## Read before class
 
+Imagine going to lecture, and instead of understanding 50% of what the professor is saying and feeling too afraid to ask questions, you understand how the topics of the lecture fit into the overall theme and understand 95% of lecture.
+
+Thats the difference reding before class makes.
+
+If you dont believe me, try it out to prove me wrong.
+
+Here is the reason it works:
+- You would already have seen the ideas of lecture before so it is more like a review than a new topic
+- You know the big picture of the lecture beforehand, so you know how the individual topics fit into the bigger idea (advantage of hindsight)
+- You already have questions about the parts you dont understand, and can ask them without thinking of them on the spot
+
+The first point is the biggest contributor. It is just a natural phenomina that the second time you delve into a difficult topic, the more you get out of it. So instead of going from 0 to 50% understanding, you go from 40% to 90%.
+
+If you think of it from a value/time perspective, getting a basic understanding on your own and getting the rest during lecture is much more efficient than getting a basic understanding during lecture and having to get the rest on your own.
 
