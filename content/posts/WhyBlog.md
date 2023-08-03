@@ -25,7 +25,7 @@ The second reason is to showcase my work to others. Its convenient to have one l
 The third reason is to tell people my mistakes so that others dont make them. I have made many explosive and expensive mistakes, so I hope I can save others from mking the same ones.
 
 #### 4
-The fourth reason is to write about interesting ideas. I was inspired by blogs such as [Paul Grahm](http://www.paulgraham.com/), [kogappa.com](https://kogappa.com/), [alexw.substack.com](https://alexw.substack.com/), and [blog.samaltman.com](https://blog.samaltman.com/)
+The fourth reason is to write about interesting ideas. I was inspired by blogs such as [Paul Graham](http://www.paulgraham.com/), [kogappa.com](https://kogappa.com/), [alexw.substack.com](https://alexw.substack.com/), and [blog.samaltman.com](https://blog.samaltman.com/)
 because they had such interesting ideas about, life, startups, and engineering. I hope to contribute to the conversation with my own ideas. 
 
 

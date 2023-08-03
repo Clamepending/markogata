@@ -25,7 +25,7 @@ featuredImage = "img/face.jpg"
 3 つ目の理由は、自分の過ちを他の人が犯さないように伝えるためです。 私は多くの爆発的で高価な間違いを犯してきたので、他の人が同じ間違いを犯すのを防ぐことができれば幸いです。
 
 #### 4
-4 つ目の理由は、興味深いアイデアについて書くことです。 Paul Grahm　kogappa.com　alexw.substack.com　blog.samaltman.com などのブログに触発されました。
+4 つ目の理由は、興味深いアイデアについて書くことです。 Paul Graham　kogappa.com　alexw.substack.com　blog.samaltman.com などのブログに触発されました。
 彼らは人生、スタートアップ、エンジニアリングについて非常に興味深いアイデアを持っていたからです。 自分のアイデアで会話に貢献できればと思っています。
 
 
