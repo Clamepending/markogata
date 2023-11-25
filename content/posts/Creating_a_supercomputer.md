@@ -27,6 +27,8 @@ Many interns and employees SSH into a workstation to run code, but Nobias would 
 
 So the task is to build and test parallel computing on all 4 workstations (8 GPUs).
 
+In other words, build a HPC cluster.
+
 ## FSDP vs DDP vs Nothing
 
 My first challenge was to use both GPUs on a single machine. 
@@ -89,7 +91,17 @@ took 2.3 seconds
 ```python
 getStrongestPath("MTOR", "ABCA9")
 ```
-took 40+ minutes
+took 90 minutes
+
+
+I found the API calls and downloading gene connectiond that was taking the most time, so I made a script that downloaded gene connection data and made a hashmap so that accessing connections became much faster.
+
+Doing this changed runtime from 90 minutes to under a minute.
+
+I also modified the programto take in multiple arguments for gene sources and gene targets to find the strongest path between any two pairs.
+
+The algorithm to do that was just a nested for loop (M*N) where N and M are the sizes of the source and target genes.
+
 
 
 

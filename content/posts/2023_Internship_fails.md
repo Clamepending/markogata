@@ -13,11 +13,11 @@ series = []
 
 In summer 2023 I did an internship at [Nobias Theraputics](https://www.nobiastx.com/). They develop computational tools for drug discovery.
 
-I worked on 4 projects in total.
+I worked on 5 projects in total.
 
 I did not fully complete 3 of the projects, but they were all cool so I thought I would share what I did and a short takeaway.
 
-I will write about the one I completed in another post.
+I will write about the two I completed in another post.
 
 # Protein Cryptic Pocket Discovery using Topological Data Analysis
 
