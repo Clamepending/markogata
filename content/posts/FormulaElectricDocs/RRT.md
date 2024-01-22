@@ -189,8 +189,6 @@ Creates a node at specified position and adds it as a child.
 
 ```python
 def addChild_byPosition(self, xpos, ypos):
-        self.children.append(TreePath(xpos, ypos, self))
-        
 
 ```
 
@@ -198,9 +196,6 @@ Adds a specified node as a child to self
 
 ```python
 def addChild_byPointer(self, tree):
-        self.children.append(tree)
-        tree.parent = self
-        
     
 ```
 
@@ -208,10 +203,6 @@ removes a specified child
 
 ```python
 def removeChild(self, tree):
-        self.children.remove(tree)
-
-
-    # return the node most towards x_new from x_nearest under the constraints (disctance)
 ```
 
 modifies the coordinates of x_new to be exactly steerDistance away from x_nearest
@@ -249,11 +240,6 @@ gets the nearest node to K out of all children
 
 ```python
 def nearest(self, K):
-        # we only want the nearest node, not the distance to it
-        
-        node, dist = self.nearestHelper(K)
-        return node
-    
 ```
 
 
@@ -261,30 +247,6 @@ gets the nearest node to K out of all children and its distance
 
 ```python
 def nearestHelper(self, K):
-        
-        distanceToK = self.getDistance(K) # NEED to impliment distance for tree (not just leafs), also impliment constraints here
-
-        # add itself to possible nodes to consider
-        nodes = [self]
-        distances = [distanceToK]
-
-        # add the closest nodes in children trees
-        # print("DO I have myself as child?:  " + str(self in self.children))
-        for child in self.children:
-            # print("my xpos", child.xpos)
-            tempNode, tempDist = child.nearestHelper(K) # nearestHelper(K, self, distanceToK)
-            nodes.append(tempNode)
-            distances.append(tempDist)
-        
-        # find lowest path out of children and self
-        tempMin = np.inf
-        for i in range(len(distances)):
-            if tempMin > distances[i]:
-                lowestNode = nodes[i]
-                tempMin = distances[i]
-
-        # return nearest node and the distance to the node
-        return lowestNode, tempMin
 ```
 
 Removes a specified child node
