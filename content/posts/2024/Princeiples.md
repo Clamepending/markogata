@@ -1,10 +1,10 @@
 +++ 
 draft = false
-date = 2024-02-02T18:40:22-07:00
-title = "Principles"
-description = "summary of recent ideas"
+date = 2024-01-16T20:48:15-08:00
+title = "Anticipation"
+description = ""
 slug = ""
-authors = ["Mark"]
+authors = []
 tags = ["essay"]
 categories = []
 externalLink = ""
