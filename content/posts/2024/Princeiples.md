@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2024-02-02T20:48:15-08:00
+date = 2024-01-16T20:48:15-08:00
 title = "Principles"
 description = ""
 slug = ""
