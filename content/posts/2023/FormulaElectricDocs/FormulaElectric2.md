@@ -1,7 +1,7 @@
 +++ 
 draft = false
-date = 2023-04-11T19:57:46-07:00
-title = "Formula Electric Autonomous"
+date = 2024-01-11T20:48:15-08:00
+title = "Optimization in Formula Electric"
 description = ""
 slug = ""
 authors = []
@@ -11,91 +11,42 @@ externalLink = ""
 series = []
 +++
 
-I joined the Berkeley Formula Electric Autonomous team, so I'll share what we did in Spring 2023:
+I spent the first semester in Berkeley Formula Electric Autonomous working on a RRT* based approach to solving the path planning problem. I soon discovered the is a much faster, more efficient, more accurate, and more customizable way through optimization. This is my explanation of how optimization works, and how it is used in the team.
 
 There are 3 main parts of the autonomous pipeline:
 - Perception
 - SLAM
-- Planning and Control
+- Path planning
+- Model Predictive Control (MPC)
 
+Optimization can be used to solve SLAM (graph SLAM), path planning, and MPC.
 
-__Perception__ takes camera and LiDAR data and outputs where obstacles are detected and where they are.
-__SLAM__ takes obstacle data from perception and predicts where the car is based on where obstacles are.
-__Planning and Control__ takes the location of the car and location of obstacles, and determines the best path to follow.
+I will be mostly talking about the path planning solution.
 
-I joined the Planning and Control team so I will elaborate on PNC:
-
-# Planning and Control (PNC)
-
-PNC can be divided into two tasks:
-- Path finding
-- Model Predictive control
-
-Path finding finds a path from point A to B
-Model Predictive control optimizes the path so that we are driving close to the racing line (optimal path for racing).
-
-
-## Path Finding
-
-### Why not A*
-
-We did consider algorithms like A* by using delauney triangulization to discritize the space, and then searching through for a path but triangulization did not guarentee the best path would be in the search space so we abondoned the idea.
-
-Here is an example I tested out.
-
-This is an example race track:
-
-![example track](/img/exampletrack.PNG)
-
-Run delauney Triangulization:
-
-![delauney](/img/delauney.PNG)
-
-Remove the middle:
-
-![remove middle](/img/removemiddle.PNG)
-
-Run A*around the track, and apply interpolation.
-
-![final track](/img/finalTrack.PNG)
-
-Notice how if triangulization returned the red line stead of the blue line overlapping the red line, the optimal path would not even be in the search space.
-
-We have no guarentee about the shape of the track, so this uncertainty is not acceptable.
-
-### RRT*
-
-Here is our first version:
-
-{{< youtube id="mXnNdAj1WYo" >}}
-
-RRT stands for Rapidly-Exploring Random Tree.
-It is used in non-Descrete search spaces to find paths. It is usually tested in mazes like this:
-
-{{< youtube id="YKiQTJpPFkA" >}}
-
-Here is a good video explaining RRT*:
-
-{{< youtube id="Ob3BIJkQJEw" >}}
-
-We wrote the code in Python, to be later translated into C for performance. 
-Unit testing helped a lot in splitting up work and reaching goals.
-
-[Here is the documentation for our RRT algorithm](/posts/formulaelectricdocs/rrt/)
-
-It is heavily based on [this paper](https://drive.google.com/file/d/1isQxfyFiHrueqK4rpEJMvF1BJfzxMYbw/view), 
-
-We still have optimizations for RRT*, like 
-- limiting the space we randomly sample points from to in front of the car
-- punishing steep angle changes
-
-### MPC
-
-The subteam just finished RRT* so we have not implimented MPC yet, but we are learning the math behind it.
-
-Some papers we are reading right now include:
+Here is a course reader that explains the math behind convex optimization.
 [EECS127 course reader](https://eecs127.github.io/assets/notes/eecs127_reader.pdf)
 [This Tutorial](https://arxiv.org/pdf/2109.11986.pdf)
+
+[Reid implimented a Non-linear Programming solution that we use on the team here. This explanation is REALLY good so check this out!](https://www.notion.so/Global-Trajectory-Optimization-93d268257cd94c9b88aeffa704e25505)
+
+The essence of this approach  is phrasing the path planning problem in a specific standard way so that we can use a solver to solve the problem.
+
+There are several libraries in python that specialize in solving optimization problems in standard form. So if we can get the problem into such a form, we can plug it into a solver and get an answer.
+
+Lets look at one of the forms:
+![example problem](/img/optimizationproblem.png)
+
+We chose either minimize or maximize (lets say minimize), and chose the quantity we want to minimize (lets say f(x)=x^2 in this case).
+
+Then we specify any constraints we want on the variables such as x>=0 and x<=9.
+
+We have now an optimization problem!
+
+Now we can input it into a solver like [cvxpy](https://www.cvxpy.org/)(what I got started with and only does convex optimization) or [casadi](https://web.casadi.org/)(what the team uses and can solve non linear programs) to solve the problem.
+
+In our example, our solution would be 0 because the smallest x^2 such that 0<= x <= 9 is 0.
+
+
 
 
 

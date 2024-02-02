@@ -17,6 +17,7 @@ There are 3 main parts of the autonomous pipeline:
 - Perception
 - SLAM
 - Planning and Control
+- Model Predictive Control (MPC)
 
 
 __Perception__ takes camera and LiDAR data and outputs where obstacles are detected and where they are.
