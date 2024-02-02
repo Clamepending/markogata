@@ -1,7 +1,7 @@
 +++ 
 draft = false
-date = 2024-01-16T20:48:15-08:00
-title = "Anticipation"
+date = 2024-02-2T20:48:15-08:00
+title = "Principles"
 description = ""
 slug = ""
 authors = []
