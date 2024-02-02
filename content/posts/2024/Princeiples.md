@@ -2,9 +2,9 @@
 draft = false
 date = 2024-02-02T18:40:22-07:00
 title = "Principles"
-description = ""
+description = "summary of recent ideas"
 slug = ""
-authors = []
+authors = ["Mark"]
 tags = ["essay"]
 categories = []
 externalLink = ""
