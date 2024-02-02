@@ -25,6 +25,7 @@ Here are some of them in no particular order:
 - Be arrogant enough to take on the challenge, and humble enough to learn from others
 - Move towards your goals a tiny bit every day
 - Say hi to the person next to you
+- its almost always better to do nothing than to consume social media or play games without friends.
 
 
 
