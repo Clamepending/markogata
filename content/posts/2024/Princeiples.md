@@ -12,7 +12,7 @@ series = []
 +++
 
 
-Ive read some books and meditated this year, and came across nuggets of wisdom that I will most likely carry for the rest of my life.
+I read some books and came across nuggets of wisdom that I will most likely carry for the rest of my life.
 Here are some of them in no particular order:
 
 
