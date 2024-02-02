@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2023-05-03T21:24:49-07:00
 title = "Bezier Curves"
 description = ""
@@ -98,13 +98,7 @@ So an additional constraint is
 
 We have now converted constraints we didnt have (the two control points per segment) to constraints we can take advantage of: the derivitive at the endpoints of segment.
 
-we should end up with 2n - 2 equations for 2n unknowns (2 control points per segment), and combined with 2 equations from the derivitives being 0 at the ends will yield a uniqu solution.
-
-
-
-# Practical implimentation
-
-
+we should end up with 2n - 2 equations for 2n unknowns (2 control points per segment), and combined with 2 equations from the derivitives being 0 at the ends will yield a unique solution.
 
 
 
