@@ -50,7 +50,6 @@ Here are the issues I faced along the way:
 
 - I expllicitly solved for the vehicle dynamics (with sinh and cosh), so the dynamics of the car had a division by 0 when the steering was set to 0. This led to the solver crashing when it got near steering = 0. The solution was to phrase the dynamics as an initial value problem with differential equations, then letting casadi solve for the function.
 
-<div style="background-color: #333; color: #fff; padding: 10px;">
 
 ```python
 def continuous_dynamics_fixed_x_order(x, u, car_params={'l_r': 1.4987, 'l_f':1.5213, 'm': 1.}):
@@ -84,7 +83,7 @@ def continuous_dynamics_fixed_x_order(x, u, car_params={'l_r': 1.4987, 'l_f':1.5
         return Function('integrator', [x0, u, dt], [x])
 
 ```
-</div>
+
 
 - The solver kept on converging to a local infeasable point, and the path it showed was completely ignoring the dynamics of the car. It turns out I was passing in the first control input for every single dynamics calculation regrdless of which point I was trying to calculate (I messed up u[i, :] vs u[:, i]). The purple path below is the path produced based on the dynamics of the car and control inputs (you can see it differs from the outputted path). The problem is simple, but took me way too long to catch. I even made a game so I could control a car following the dynamics using arrow keys to test my dynamics.
 
