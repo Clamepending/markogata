@@ -40,7 +40,7 @@ If there is a steep angle in the track, the initial guess of the heading may be 
 Reid has made a [really good explanation](https://reid.xz.ax/global_opt_docs) of the approach for the whole FEB team.
 
 My implimentation assumes constant wheel torque with fixed max velocity and max acceleration.
-I also assume constant acceleration envelope.
+I also assume a constant acceleration envelope.
 
 
 ## The process
