@@ -51,6 +51,7 @@ Here are the issues I faced along the way:
 - I expllicitly solved for the vehicle dynamics (with sinh and cosh), so the dynamics of the car had a division by 0 when the steering was set to 0. This led to the solver crashing when it got near steering = 0. The solution was to phrase the dynamics as an initial value problem with differential equations, then letting casadi solve for the function.
 
 <div style="background-color: #333; color: #fff; padding: 10px;">
+
 ```python
 def continuous_dynamics_fixed_x_order(x, u, car_params={'l_r': 1.4987, 'l_f':1.5213, 'm': 1.}):
         """Defines dynamics of the car, i.e. equality constraints.
