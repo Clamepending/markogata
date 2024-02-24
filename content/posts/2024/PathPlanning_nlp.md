@@ -17,7 +17,7 @@ Path planning is the challenge of calculating the best path for a race car to ta
 
 The example below solves for the positions, velocity, and orientation of the car at every point in the optimal path (racing line).
 
-![example racing line](/static/img/examplePath.png)
+![example racing line](/img/examplePath.png)
 
 
 After developing an RRT* based approch to path planning, my friend [Reid Dye](https://reid.xz.ax/robotgallery.php) introduced me to a Non-Linear programming based way to solve the problem. His way was faster, more accurate, more custamizable with things like friction and velocity constraints, and overall more organized.
@@ -84,13 +84,13 @@ def continuous_dynamics_fixed_x_order(x, u, car_params={'l_r': 1.4987, 'l_f':1.5
 ```
 - The solver kept on converging to a local infeasable point, and the path it showed was completely ignoring the dynamics of the car. It turns out I was passing in the first control input for every single dynamics calculation regrdless of which point I was trying to calculate (I messed up u[i, :] vs u[:, i]). The purple path below is the path produced based on the dynamics of the car and control inputs (you can see it differs from the outputted path). The problem is simple, but took me way too long to catch. I even made a game so I could control a car following the dynamics using arrow keys to test my dynamics.
 
-![broken dynamics constraint](/static/img/broken.png)
+![broken dynamics constraint](/img/broken.png)
 
 - The initial guess has to be a pretty good guess. The most straightforward method of making an initial guess is following the midpoints, and setting the headings to just rotate from 0 to 2pi. However, if there is a steep angle in the track, the initial guess of the heading may be looking the opposite way as it should be, and this usually confuses the solver to converging to an infeasible solution.
 
-![initial guess](/static/img/initialguess.PNG)
+![initial guess](/img/initialguess.PNG)
 
-![buggy path](/static/img/buggedpath.PNG)
+![buggy path](/img/buggedpath.PNG)
 
 
 
