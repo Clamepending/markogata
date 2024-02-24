@@ -20,7 +20,7 @@ The example below solves for the positions, velocity, and orientation of the car
 ![example racing line](/img/examplePath.png)
 
 
-After developing an RRT* based approch to path planning, my friend [Reid Dye](https://reid.xz.ax/robotgallery.php) introduced me to a Non-Linear programming based way to solve the problem. His way was faster, more accurate, more custamizable with things like friction and velocity constraints, and overall more organized.
+After developing an RRT* based approch to path planning, my friend [Reid Dye](https://reid.xz.ax) introduced me to a Non-Linear programming based way to solve the problem. His way was faster, more accurate, more custamizable with things like friction and velocity constraints, and overall more organized.
 
 So I decided to replicate his approach, and create a NLP (non-linear programming) based solution. 
 
@@ -28,11 +28,11 @@ Here is a summary.
 
 ## Final solution
 
-{{< youtube id="bxgRdtBdPIA" >}}
-
-explanation of fail case
+{{< youtube id="4rIr03vNlNk" >}}
 
 After solving for the path with a few points, a subdivide algorithm breakes the path into 0.1 second increments so we have many datapoints in the final path.
+
+If there is a steep angle in the track, the initial guess of the heading may be looking the opposite way as it should be, and this usually confuses the solver to converging to an infeasible solution. This is solvable with a smarter intial guess, but its not a fun problem so I decided not to resolve the issue.
 
 
 ## How it works
