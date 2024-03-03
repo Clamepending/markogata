@@ -1,4 +1,4 @@
----
++++
 title: "Logic_tokenizer"
 date: 2024-03-02T17:43:44-08:00
 draft: false
@@ -9,7 +9,7 @@ tags = ["essay"]
 categories = []
 externalLink = ""
 series = []
----
++++
 
 
 I watched [Andrej Karpathy's video on tokenization](https://www.youtube.com/watch?v=zduSFxRajkE) and decided to build a tokenizer based on a rapper I enjoy: Logic.
