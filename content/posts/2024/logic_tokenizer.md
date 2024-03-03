@@ -1,7 +1,7 @@
 +++
-title: "Logic_tokenizer"
-date: 2024-03-02T17:43:44-08:00
-draft: false
+draft = false
+date = 2024-03-02T17:43:44-08:00
+title = "Logic_tokenizer"
 description = ""
 slug = ""
 authors = []
