@@ -26,7 +26,7 @@ I tested out how the vocab size effects the compression ratio when the entire tr
 
 ![compression graph](/img/vocabsizeVScompression.PNG)
 
-A vocab size of 1024 which is quadruple the original utf-8 encoding vocabulary results in around 3x compression if we continue the trend. 
+A vocab size of 1024 which is quadruple the original utf-8 encoding vocabulary results in around 3x compression. 
 
 If you try out regular english sentences, the compression ratio sits at around 2 (try it on huggingface with above link).
 
