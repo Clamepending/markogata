@@ -24,7 +24,7 @@ Thats expected because the training set has lots of that kind of data, but still
 
 I tested out how the vocab size effects the compression ratio when the entire training set is passed in and got a nice curve.
 
-![compression graph](vocabsizeVScompression.PNG)
+![compression graph](/img/vocabsizeVScompression.PNG)
 
 A vocab size of 1024 which is quadruple the original utf-8 encoding vocabulary results in around 8x compression if we continue the trend. 
 
