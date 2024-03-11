@@ -1,6 +1,6 @@
 +++
 draft = false
-date = 2024-03-02T17:43:44-08:00
+date = 2024-03-11T17:43:44-08:00
 title = "making a VICReg"
 description = ""
 slug = ""
