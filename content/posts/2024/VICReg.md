@@ -1,6 +1,6 @@
 +++
 draft = false
-date = 2024-03-11T17:43:44-08:00
+date = 2024-03-02T17:43:44-08:00
 title = "making a VICReg"
 description = ""
 slug = ""
@@ -21,7 +21,7 @@ Some of thee include:
 
 He is an advocate of self-supervised learning, and in the interview, talks about [JEPA](https://arxiv.org/abs/2301.08243) and how self-supervised learning could allow models to construct a world model by just observing the world.
 
-<!-- ![alt text](/img/image.png) -->
+![alt text](/img/image.png)
 
 The joint embedding cuts out the irrelevant details of a feed (like cutting out specific leaf positions in a dashcam video) and keeps the important information (like which way the road is turning in a dashcam video).
 
@@ -29,7 +29,7 @@ Once this embedding is trained, a predictor can be trained on top of it to predi
 
 This is essentially trying to predict the next frame in a given video, but cutting out irrelevant details by doing the predictions in embedding space.
 
-<!-- ![alt text](/img/image-2.png) -->
+![alt text](/img/image-2.png)
 
 Yann Lecun mentions [VICReg](https://arxiv.org/abs/2105.04906) as an example embedding network, so I looked up the paper and tried it out on [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html).
 
@@ -37,7 +37,7 @@ Yann Lecun mentions [VICReg](https://arxiv.org/abs/2105.04906) as an example emb
 
 The final network has the following architecture:
 
-<!-- ![alt text](/img/image-1.png) -->
+![alt text](/img/image-1.png)
 
 ```python
 class VICReg(nn.Module):
@@ -86,8 +86,8 @@ With just a MSE loss, all embdding would collapse to a single constant point (yo
 
 I omitted the pushing forces in my loss function and got a collapse of the 2-dimentional embedding space like this:
 
-<!-- ![alt text](/img/collapse2.PNG) -->
-<!-- ![alt text](/img/collapse.PNG) -->
+![alt text](/img/collapse2.PNG)
+![alt text](/img/collapse.PNG)
 
 There are contrastive and non-contrastive methods for preventing collapse.
 
@@ -100,30 +100,30 @@ The V stands for variance. This looks at the variance of the embeddings over the
 
 The formula looks like this
 
-<!-- ![alt text](/img/image-6.png) -->
+![alt text](/img/image-6.png)
 
 For example, if batch size was 2 and we had the embeddings [1,2,3] and [1,2,3] for both samples, the variance loss would be high.
 If we had [0,0,0] and [1,1,1] for both samples, the variance loss would be low.
 
-<!-- ![alt text](/img/image-4.png) -->
+![alt text](/img/image-4.png)
 
 ### I loss
 The I stands for invariance.
 This is the normal MSE loss that pulls together similar samples.
 
-<!-- ![alt text](/img/image-5.png) -->
+![alt text](/img/image-5.png)
 
 ### C loss
 The C stands for covariance.
 This is not necessary but nice to have.
 This prevents dimentionality collapse. This means if we allow a dimention 3 embedding space, we encourage the model to use all 3 dimentions for embedding and discourage correlations between dimentions.
 
-<!-- ![alt text](/img/image-3.png) -->
+![alt text](/img/image-3.png)
 
 ### VICReg loss
 Combining it all together we get a pulling force from I loss, pushing force from V loss and C loss.
 
-<!-- ![alt text](/img/image-7.png) -->
+![alt text](/img/image-7.png)
 
 This is the code I used:
 
@@ -163,17 +163,17 @@ def VICReg_loss(image1, image2):
 
 The embedding space I got looks a bit funky but that is probably because I am visualizing a 50 dimentional embedding space in 2 dimentions with T-SNE.
 
-<!-- ![alt text](/img/image-8.png) -->
-<!-- ![alt text](/img/image-9.png) -->
+![alt text](/img/image-8.png)
+![alt text](/img/image-9.png)
 
 Loss averaged over 200 batches each:
 
-<!-- ![alt text](/img/image-10.png) -->
+![alt text](/img/image-10.png)
 
 The diagonal pattern is probably because the covariance error is too small, which encourages points to be along the diagonal instead of using the whole space.
 
 I tried making the weights 1,1,1 and increased the embedding dimention to 50 and the points spread out a bit.
 
-<!-- ![alt text](/img/image-11.png) -->
+![alt text](/img/image-11.png)
 
 
