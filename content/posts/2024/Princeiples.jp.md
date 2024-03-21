@@ -11,21 +11,19 @@ externalLink = ""
 series = []
 +++
 
+私は何冊かの本を読み、おそらく一生持ち続けるであろう知恵の塊に出会った。
+そのいくつかを順不同で紹介しよう：
 
-I read some books and came across nuggets of wisdom that I will most likely carry for the rest of my life.
-Here are some of them in no particular order:
-
-
-- aging is a desease - David A. Sinclair
-- Polish the mind and polish the body
-- exponential growth is unpredictably fast
-- invest long term
-- read books
-- meet people in person (don't zoom)
-- Be arrogant enough to take on the challenge, and humble enough to learn from others
-- Move towards your goals a tiny bit every day
-- Say hi to the person next to you
-- its almost always better to do nothing than to consume social media or play games without friends.
+- 老化は病気である - デビッド・A・シンクレア
+- 心を磨き、体を磨く
+- 指数関数的成長は予測不可能な速さである
+- 長期投資
+- 本を読む
+- 直接人に会う（ズームしない）
+- 挑戦するには傲慢になり、人から学ぶには謙虚になる。
+- 目標に向かって毎日少しずつ前進する
+- 隣の人に挨拶する
+- ソーシャルメディアや自分だけでゲームをするくらいなら、何もしないほうがいい。
 
 
 
