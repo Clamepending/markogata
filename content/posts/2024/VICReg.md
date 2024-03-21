@@ -1,14 +1,14 @@
 +++
-draft : false
-date: 2024-03-11T13:30:07-07:00
-title : "making a VICReg"
-description : ""
-slug : ""
-authors : []
-tags : ["project"]
-categories : []
-externalLink : ""
-series : []
+draft = false
+date = 2024-03-11T13:30:07-07:00
+title = "making a VICReg"
+description = ""
+slug = ""
+authors = []
+tags = ["project"]
+categories = []
+externalLink = ""
+series = []
 +++
 
 ## Background
